@@ -1,0 +1,6 @@
+{
+  "name": "CloudGallery",
+  "description": "Personal native gallery and file manager with optional Cloudflare R2 direct connection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
