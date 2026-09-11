@@ -24,6 +24,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.InsertDriveFile
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.CloudOff
 import androidx.compose.material.icons.filled.CreateNewFolder
@@ -444,7 +445,7 @@ fun CloudItemRow(
                             modifier = Modifier.fillMaxSize()
                         ) {
                             Icon(
-                                imageVector = Icons.Default.InsertDriveFile,
+                                imageVector = Icons.AutoMirrored.Filled.InsertDriveFile,
                                 contentDescription = "File",
                                 tint = MaterialTheme.colorScheme.onSurfaceVariant,
                                 modifier = Modifier

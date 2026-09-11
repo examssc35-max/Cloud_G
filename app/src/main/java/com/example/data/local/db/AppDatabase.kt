@@ -19,7 +19,7 @@ abstract class AppDatabase : RoomDatabase() {
                     context.applicationContext,
                     AppDatabase::class.java,
                     "cloud_gallery.db"
-                ).fallbackToDestructiveMigration().build()
+                ).fallbackToDestructiveMigration(dropAllTables = true).build()
                 INSTANCE = instance
                 instance
             }

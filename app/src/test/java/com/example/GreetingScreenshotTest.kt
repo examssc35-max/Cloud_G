@@ -21,7 +21,16 @@ class GreetingScreenshotTest {
 
   @Test
   fun greeting_screenshot() {
-    composeTestRule.setContent { MyApplicationTheme { Greeting("Robolectric") } }
+    composeTestRule.setContent {
+      MyApplicationTheme {
+        com.example.ui.settings.ConnectionStatusCard(
+          status = com.example.domain.model.R2ConnectionStatus.Connected(
+            accountId = "demo_account_id",
+            bucketName = "personal-photos"
+          )
+        )
+      }
+    }
 
     composeTestRule.onRoot().captureRoboImage(filePath = "src/test/screenshots/greeting.png")
   }
